@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kyle-harman-portfolio/precache-manifest.a7bc868d4d99dd41dac889051f8913fe.js"
+  "/kyle-harman-portfolio/precache-manifest.5fcf7ae34e6efd3387a7c2360b3b5849.js"
 );
 
 self.addEventListener('message', (event) => {
