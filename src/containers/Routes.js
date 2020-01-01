@@ -1,10 +1,10 @@
 import React from "react";
 import { Router } from "@reach/router";
-import App from "../components/App";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import App from "../containers/App";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 
 export default function Routes() {
 	return (
