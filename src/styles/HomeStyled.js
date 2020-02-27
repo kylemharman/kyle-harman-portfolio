@@ -3,7 +3,6 @@ import { Link } from "@reach/router";
 
 export const HeroH1 = styled.h1`
     text-align: center;
-    width: 50%;
     line-height: 0.9em;
     padding: 1rem 0;
     background: url(${props => props.background});
@@ -26,6 +25,11 @@ export const StyledH1Link = styled(Link)`
     margin: 0 0 0 30px;
     font-weight: 700;
     font-size: 2rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        color: blue;
+    }
 `;
 
 export const NavigationContainer = styled.div`

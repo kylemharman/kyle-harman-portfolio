@@ -26,6 +26,7 @@ export default function Home() {
                 <NavigationContainer>
                     <StyledH1Link to="/about">about.</StyledH1Link>
                     <StyledH1Link to="/projects">projects.</StyledH1Link>
+                    <StyledH1Link to="/contact">contact.</StyledH1Link>
                 </NavigationContainer>
                 <SocialsContainerRight>
                     <a

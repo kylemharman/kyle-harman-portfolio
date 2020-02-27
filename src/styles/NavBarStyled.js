@@ -9,4 +9,5 @@ export const Nav = styled.nav`
 
 export const Logo = styled.h1`
     margin: 0px;
+    font-size: 2rem;
 `;

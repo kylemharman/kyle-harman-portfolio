@@ -11,7 +11,7 @@ import homeLinkImg from "../assets/home-link.jpg";
 import aboutLinkImg from "../assets/about-link.jpg";
 import projectsLinkImg from "../assets/projects-link.jpg";
 import resume from "../assets/kyle-harman-resume.pdf";
-// import contactLinkImg from "../assets/contact-link.jpg";
+import contactLinkImg from "../assets/contact-link.jpg";
 
 const NavigationOverlay = props => {
     return (
@@ -25,9 +25,9 @@ const NavigationOverlay = props => {
             <StyledNavLink to="/projects" background={projectsLinkImg}>
                 Projects.
             </StyledNavLink>
-            {/* <StyledNavLink to="/contact" background={contactLinkImg}>
+            <StyledNavLink to="/contact" background={contactLinkImg}>
                 Contact.
-            </StyledNavLink> */}
+            </StyledNavLink>
             <SocialsContainerRight>
                 <a
                     href="https://github.com/kylemharman"

@@ -1,25 +1,50 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+    height: 80vh;
+    margin: 0 50px 50px 50px;
+
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    height: calc(100vh - 200px);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3fr 1fr;
+
+    grid-gap: 3em;
+    /* align-items: center; */
 
     p {
-        /* text-align: center; */
         font-size: 1.2rem;
         line-height: 1.8rem;
+        /* width: 80%; */
+        margin-bottom: 0px;
     }
 
-    img {
-        /* max-height: 80vh; */
-        width: 100%;
+    .photo {
+        grid-column: 1;
+        grid-row: span 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .copy {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0 3em;
+    }
+    .navigationLinks {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+        align-self: end;
     }
 `;
 
 export const AboutH1 = styled.h1`
     line-height: 0.9em;
-    padding: 1rem 0;
     background: url(${props => props.background});
     background-size: contain;
     background-position: center;
@@ -27,7 +52,7 @@ export const AboutH1 = styled.h1`
     -webkit-background-clip: text;
     color: transparent;
     margin: 0;
+    margin-bottom: 50px;
     color: transparent;
     font-size: 6rem;
-    /* text-align: center; */
 `;
