@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BurgerButton = styled.button`
 
@@ -20,7 +20,8 @@ export const BurgerButton = styled.button`
 
   div:first-child {
     width: 2rem;
-    transform: ${props => (props.active ? "translateY(10px) rotate(-45deg)" : null)}; 
+    transform: ${props =>
+        props.active ? "translateY(10px) rotate(-45deg)" : null}; 
     
   }
   div:nth-child(2) {
@@ -29,7 +30,8 @@ export const BurgerButton = styled.button`
   }
   div:last-child {
     width: ${props => (props.active ? "2rem" : "1rem")};
-    transform: ${props => (props.active ? "translateY(-10px) rotate(45deg)" : null)}; 
+    transform: ${props =>
+        props.active ? "translateY(-11px) rotate(45deg)" : null}; 
   }
   
   div {
@@ -38,4 +40,4 @@ export const BurgerButton = styled.button`
     background-color: #000;
     transition: all 0.3s linear;
   }
-`
+`;

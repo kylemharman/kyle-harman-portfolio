@@ -1,29 +1,59 @@
-import React from 'react';
-import {Link} from '@reach/router';
+import React from "react";
 // styles
-import {NavigationOverlayNav , StyledNavLink} from '../styles/NavigationOverlayStyled';
+import {
+    NavigationOverlayNav,
+    StyledNavLink,
+    SocialsContainerRight,
+    SocialsContainerLeft
+} from "../styles/NavigationOverlayStyled";
+// assets
+import homeLinkImg from "../assets/home-link.jpg";
+import aboutLinkImg from "../assets/about-link.jpg";
+import projectsLinkImg from "../assets/projects-link.jpg";
+import resume from "../assets/kyle-harman-resume.pdf";
+// import contactLinkImg from "../assets/contact-link.jpg";
 
-const NavigationOverlay = (props) => {
-
+const NavigationOverlay = props => {
     return (
         <NavigationOverlayNav active={props.active} onClick={props.clicked}>
-            <StyledNavLink to="/" background="https://images.unsplash.com/photo-1568160277762-0224a391b5a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=939&q=80">Home.</StyledNavLink>
-            <StyledNavLink to="/about" background="https://images.unsplash.com/photo-1554188248-986adbb73be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80">About.</StyledNavLink>
-            <StyledNavLink to="/projects" background="https://images.unsplash.com/photo-1565855991995-7a5ceb19ee95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80">Projects.</StyledNavLink>
-            <StyledNavLink to="/contact" background="https://images.unsplash.com/photo-1564089957880-517edea1afc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">Contact.</StyledNavLink>
-            <div>
-                <p>Connect </p>
-                <ul>
-                    <li><Link to="#"><i className="fab fa-github fa-lg"></i></Link></li>
-                    <li><Link to="#"><i className="fab fa-linkedin-in fa-lg"></i></Link></li>
-                </ul>
-            </div>
-            
+            <StyledNavLink to="/" background={homeLinkImg}>
+                Home.
+            </StyledNavLink>
+            <StyledNavLink to="/about" background={aboutLinkImg}>
+                About.
+            </StyledNavLink>
+            <StyledNavLink to="/projects" background={projectsLinkImg}>
+                Projects.
+            </StyledNavLink>
+            {/* <StyledNavLink to="/contact" background={contactLinkImg}>
+                Contact.
+            </StyledNavLink> */}
+            <SocialsContainerRight>
+                <a
+                    href="https://github.com/kylemharman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/kyle-harman/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+            </SocialsContainerRight>
+            <SocialsContainerLeft>
+                <a href="mailto:kylemartinharman@gmail.com" target="_top">
+                    Email
+                </a>
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                    Resume
+                </a>
+            </SocialsContainerLeft>
         </NavigationOverlayNav>
-         
-    )
-}
+    );
+};
 
 export default NavigationOverlay;
-
-

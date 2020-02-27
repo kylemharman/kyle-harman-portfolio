@@ -1,22 +1,30 @@
-import React from 'react';
+import React from "react";
+import { Link } from "@reach/router";
 // components
-import NavigationBurgerButton from './NavigationBurgerButton';
-import NavigationOverlay from './NavigationOverlay';
+import NavigationBurgerButton from "./NavigationBurgerButton";
+import NavigationOverlay from "./NavigationOverlay";
 // styles
-import {Nav} from '../styles/NavBarStyled';
+import { Nav, Logo } from "../styles/NavBarStyled";
 
 export default function NavBar(props) {
-    
     return (
         <header>
             <Nav>
                 <React.Fragment>
-                    <h1>harman.</h1>
+                    <Link to="/">
+                        <Logo>harman.</Logo>
+                    </Link>
                 </React.Fragment>
-                
-                <NavigationOverlay active={props.active} clicked={props.clicked}/>
-                <NavigationBurgerButton clicked={props.clicked} active={props.active}/>
+
+                <NavigationOverlay
+                    active={props.active}
+                    clicked={props.clicked}
+                />
+                <NavigationBurgerButton
+                    clicked={props.clicked}
+                    active={props.active}
+                />
             </Nav>
         </header>
-    )
+    );
 }

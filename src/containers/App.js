@@ -1,19 +1,18 @@
-import React, {useState} from 'react';
-import NavBar from '../components/NavBar'
+import React, { useState } from "react";
+import NavBar from "../components/NavBar";
 
 const App = () => {
-
     const [openMenu, setOpenMenu] = useState(false);
 
     const toggleMenuHandler = () => {
         setOpenMenu(!openMenu);
-    }
+    };
 
     return (
-        <div>
-            <NavBar clicked={toggleMenuHandler} active={openMenu}/>         
-        </div>
+        <React.Fragment>
+            <NavBar clicked={toggleMenuHandler} active={openMenu} />
+        </React.Fragment>
     );
-}
+};
 
 export default App;
