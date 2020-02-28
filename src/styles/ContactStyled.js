@@ -27,4 +27,12 @@ export const ContactH1 = styled.a`
     &:hover {
         color: blue;
     }
+
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
 `;

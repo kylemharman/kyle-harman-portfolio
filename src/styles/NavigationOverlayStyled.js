@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Link } from "@reach/router";
 
 export const NavigationOverlayNav = styled.nav`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 135px auto 135px;
     align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -18,9 +19,15 @@ export const NavigationOverlayNav = styled.nav`
     transform: ${props =>
         props.active ? "translateX(0%)" : "translateX(-100%)"};
     overflow: clip;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 0 1fr 0;
+    }
 `;
 
 export const StyledNavLink = styled(Link)`
+    display: block;
+    text-align: center;
     text-decoration: none;
     font-weight: 700;
     font-size: 6rem;
@@ -57,12 +64,12 @@ export const StyledNavLink = styled(Link)`
 `;
 
 export const SocialsContainerRight = styled.div`
-    position: absolute;
-    right: 75px;
-    top: calc(50% + 75px);
+    /* position: absolute; */
+    /* right: 75px; */
+    /* top: calc(50% + 75px); */
     transform: rotate(90deg);
-    transform-origin: bottom right;
-    text-align: center;
+    /* transform-origin: bottom right; */
+    /* text-align: center; */
 
     a {
         margin-left: 30px;
@@ -77,15 +84,19 @@ export const SocialsContainerRight = styled.div`
             color: blue;
         }
     }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const SocialsContainerLeft = styled.div`
-    position: absolute;
-    left: 75px;
-    top: calc(50% + 60px);
+    /* position: absolute; */
+    /* left: 75px; */
+    /* top: calc(50% + 60px); */
     transform: rotate(-90deg);
-    transform-origin: bottom left;
-    text-align: center;
+    /* transform-origin: bottom left; */
+    /* text-align: center; */
 
     a {
         margin-right: 30px;
@@ -99,5 +110,9 @@ export const SocialsContainerLeft = styled.div`
             border-bottom: 1px solid white;
             color: blue;
         }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 `;

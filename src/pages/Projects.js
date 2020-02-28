@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCardList from "../components/ProjectCardList";
-import { HeroH1 } from "../styles/HomeStyled";
-import projectsLinkImg from "../assets/projects-link.jpg";
+// import { HeroH1 } from "../styles/HomeStyled";
+// import projectsLinkImg from "../assets/projects-link.jpg";
 
 export default function Projects() {
     return (

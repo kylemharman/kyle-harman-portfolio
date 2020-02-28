@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const ProjectCardContainerDiv = styled.div`
     display: flex;
     flex-direction: column;
-    width: 28%;
-    margin: 1em;
     border-radius: 10px;
     -webkit-box-shadow: 4px 4px 25px -10px #ccc;
     -moz-box-shadow: 4px 4px 25px -10px #ccc;
@@ -17,14 +15,6 @@ export const ProjectCardContainerDiv = styled.div`
     }
 
     img {
-        width: 100%;
-    }
-
-    @media (max-width: 768px) {
-        width: 40%;
-    }
-
-    @media (max-width: 425px) {
         width: 100%;
     }
 `;

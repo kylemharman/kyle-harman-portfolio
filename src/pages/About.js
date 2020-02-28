@@ -34,7 +34,9 @@ export default function About() {
                 </p>
             </div>
             <div className="navigationLinks">
-                <StyledH1Link to="/projects">projects.</StyledH1Link>
+                <StyledH1Link to="/projects" style={{ marginRight: "20px" }}>
+                    projects.
+                </StyledH1Link>
                 <StyledH1Link to="/contact">contact.</StyledH1Link>
             </div>
         </AboutContainer>

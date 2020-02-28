@@ -3,19 +3,27 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
     height: 80vh;
     margin: 0 50px 50px 50px;
-
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 3fr 1fr;
-
     grid-gap: 3em;
-    /* align-items: center; */
+
+    @media (max-width: 1024px) {
+        grid-gap: 1em;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 
     p {
         font-size: 1.2rem;
         line-height: 1.8rem;
-        /* width: 80%; */
         margin-bottom: 0px;
+
+        @media (max-width: 425px) {
+            font-size: 1rem;
+        }
     }
 
     .photo {
@@ -34,12 +42,21 @@ export const AboutContainer = styled.div`
         grid-column: 2;
         grid-row: 1;
         padding: 0 3em;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
     }
     .navigationLinks {
         grid-column: 2;
         grid-row: 2;
         justify-self: end;
         align-self: end;
+
+        @media (max-width: 768px) {
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 30px;
+        }
     }
 `;
 
@@ -55,4 +72,11 @@ export const AboutH1 = styled.h1`
     margin-bottom: 50px;
     color: transparent;
     font-size: 6rem;
+
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
 `;

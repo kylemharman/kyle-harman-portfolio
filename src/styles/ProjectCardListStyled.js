@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProjectCardListContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 3rem;
-`
+    display: grid;
+    grid-gap: 20px;
+    margin: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+`;

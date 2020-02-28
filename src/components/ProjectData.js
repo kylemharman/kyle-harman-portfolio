@@ -16,17 +16,18 @@ import ProjectThree from "../assets/project-ga-three.jpg";
 
 const projectData = [
     {
-        key: "vfgh8765",
-        image: ProjectZero,
-        title: "Tic Tac Toe",
+        key: "09uhecin",
+        image: ProjectThree,
+        title: "Simple Surf",
         copy:
-            "An easy to play Tic Tac Toe game. Built with vanilla JavaScript, HTML and CSS with a clean minimalistic design and fun, engaging animations.",
-        linkToProject: "https://kylemharman.github.io/seifx01-project-zero/",
-        gitHubLink: "https://github.com/kylemharman/seifx01-project-zero",
+            "Simple Surf is an application that simplifies surf forecasts in a beginner friendly way to understand. Built with the MERN stack.",
+        linkToProject: "https://harman-simple-surf.herokuapp.com/",
+        gitHubLink: "https://github.com/kylemharman/simple-surf",
         techIcons: [
-            { icon: html, alt: "HTML" },
-            { icon: css, alt: "CSS" },
-            { icon: javascript, alt: "JavaScript" }
+            { icon: mongo, alt: "MongoDB", className: "mongo" },
+            { icon: express, alt: "Express JS", className: "express" },
+            { icon: react, alt: "React" },
+            { icon: node, alt: "Node JS" }
         ]
     },
     {
@@ -45,18 +46,17 @@ const projectData = [
         ]
     },
     {
-        key: "09uhecin",
-        image: ProjectThree,
-        title: "Simple Surf",
+        key: "vfgh8765",
+        image: ProjectZero,
+        title: "Tic Tac Toe",
         copy:
-            "Simple Surf is an application that simplifies surf forecasts in a beginner friendly way to understand. Built with the MERN stack.",
-        linkToProject: "https://harman-simple-surf.herokuapp.com/",
-        gitHubLink: "https://github.com/kylemharman/simple-surf",
+            "An easy to play Tic Tac Toe game. Built with vanilla JavaScript, HTML and CSS with a clean minimalistic design and fun, engaging animations.",
+        linkToProject: "https://kylemharman.github.io/seifx01-project-zero/",
+        gitHubLink: "https://github.com/kylemharman/seifx01-project-zero",
         techIcons: [
-            { icon: mongo, alt: "MongoDB", className: "mongo" },
-            { icon: express, alt: "Express JS", className: "express" },
-            { icon: react, alt: "React" },
-            { icon: node, alt: "Node JS" }
+            { icon: html, alt: "HTML" },
+            { icon: css, alt: "CSS" },
+            { icon: javascript, alt: "JavaScript" }
         ]
     }
 ];
