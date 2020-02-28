@@ -11,6 +11,7 @@ export const HomeGrid = styled.div`
 
     @media (max-width: 768px) {
         grid-template-columns: 0 1fr 0;
+        height: calc(100vh - 250px);
     }
 `;
 
