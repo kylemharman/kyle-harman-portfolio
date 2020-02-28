@@ -7,6 +7,10 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        height: calc(100vh - 250px);
+    }
 `;
 
 export const ContactH1 = styled.a`

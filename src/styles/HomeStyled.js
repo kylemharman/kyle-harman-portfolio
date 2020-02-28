@@ -5,13 +5,13 @@ export const HomeGrid = styled.div`
     height: calc(100vh - 200px);
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 135px auto 135px;
+    grid-template-columns: 130px auto 130px;
     align-items: center;
     justify-items: center;
 
     @media (max-width: 768px) {
         grid-template-columns: 0 1fr 0;
-        height: calc(100vh - 250px);
+        height: calc(100vh - 300px);
     }
 `;
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { AboutContainer, AboutH1 } from "../styles/AboutStyled";
-import { StyledH1Link } from "../styles/HomeStyled";
 import aboutLinkImg from "../assets/about-link.jpg";
 import portrait from "../assets/kyle-harman-6.jpg";
 
@@ -32,12 +31,17 @@ export default function About() {
                     best feeling, it’s what drives me, motivates me to keep
                     learning new technologies and become a better developer.
                 </p>
-            </div>
-            <div className="navigationLinks">
-                <StyledH1Link to="/projects" style={{ marginRight: "20px" }}>
-                    projects.
-                </StyledH1Link>
-                <StyledH1Link to="/contact">contact.</StyledH1Link>
+                <p>
+                    Thanks for stopping by, dont forget to check out my{" "}
+                    <a
+                        href="/projects"
+                        alt="projects"
+                        style={{ color: "blue" }}
+                    >
+                        projects
+                    </a>{" "}
+                    to see my latest work.
+                </p>
             </div>
         </AboutContainer>
     );

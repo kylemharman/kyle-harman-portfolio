@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     height: 80vh;
-    margin: 0 50px 50px 50px;
+    margin: 30px 50px 50px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: auto;
     grid-gap: 3em;
 
     @media (max-width: 1024px) {
@@ -19,7 +19,6 @@ export const AboutContainer = styled.div`
     p {
         font-size: 1.2rem;
         line-height: 1.8rem;
-        margin-bottom: 0px;
 
         @media (max-width: 425px) {
             font-size: 1rem;
@@ -29,6 +28,7 @@ export const AboutContainer = styled.div`
     .photo {
         grid-column: 1;
         grid-row: span 2;
+        justify-self: center;
 
         img {
             width: 100%;
@@ -36,14 +36,36 @@ export const AboutContainer = styled.div`
             display: block;
             object-fit: cover;
         }
+
+        @media (max-width: 768px) {
+            grid-column: 1;
+            grid-row: 1;
+
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
     }
 
     .copy {
         grid-column: 2;
         grid-row: 1;
         padding: 0 3em;
+
         @media (max-width: 768px) {
+            grid-column: 1;
+            grid-row: 2;
             padding: 0;
+            margin-bottom: 30px;
         }
     }
     .navigationLinks {
@@ -53,9 +75,10 @@ export const AboutContainer = styled.div`
         align-self: end;
 
         @media (max-width: 768px) {
+            grid-column: 1;
+            grid-row: 3;
             justify-self: center;
             align-self: center;
-            margin-bottom: 30px;
         }
     }
 `;
@@ -74,9 +97,11 @@ export const AboutH1 = styled.h1`
     font-size: 6rem;
 
     @media (max-width: 768px) {
-        font-size: 4rem;
+        text-align: center;
+        margin-top: -70px;
+        font-size: 5rem;
     }
     @media (max-width: 425px) {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 `;

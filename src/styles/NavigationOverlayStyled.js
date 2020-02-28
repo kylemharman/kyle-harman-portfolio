@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 export const NavigationOverlayNav = styled.nav`
     display: grid;
-    grid-template-columns: 135px auto 135px;
+    grid-template-columns: 130px auto 130px;
     align-items: center;
     justify-items: center;
     overflow-x: hidden;
