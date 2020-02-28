@@ -2,6 +2,7 @@ import React from "react";
 import { AboutContainer, AboutH1 } from "../styles/AboutStyled";
 import aboutLinkImg from "../assets/about-link.jpg";
 import portrait from "../assets/kyle-harman-6.jpg";
+import { Link } from "@reach/router";
 
 export default function About() {
     return (
@@ -33,13 +34,15 @@ export default function About() {
                 </p>
                 <p>
                     Thanks for stopping by, dont forget to check out my{" "}
-                    <a
-                        href="/projects"
-                        alt="projects"
-                        style={{ color: "blue" }}
-                    >
-                        projects
-                    </a>{" "}
+                    {
+                        <Link
+                            to="/projects"
+                            alt="projects"
+                            style={{ color: "blue" }}
+                        >
+                            projects
+                        </Link>
+                    }{" "}
                     to see my latest work.
                 </p>
             </div>
