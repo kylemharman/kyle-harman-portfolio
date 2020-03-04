@@ -32,19 +32,19 @@ export const StyledNavLink = styled(Link)`
     font-weight: 700;
     font-size: 6rem;
     margin: 0.5rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     color: white;
     transition: all 0.3s ease-in-out;
-
+    background: url(${props => props.background});
+    background-size: contain;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     &:hover {
-        background: url(${props => props.background});
-        background-size: contain;
-        background-position: center;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-stroke-width: 0px;
         color: transparent;
+        -webkit-text-stroke-width: none;
+        -webkit-text-stroke-color: transparent;
     }
 
     @media (max-width: 768px) {

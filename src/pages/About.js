@@ -33,7 +33,7 @@ export default function About() {
                     learning new technologies and become a better developer.
                 </p>
                 <p>
-                    Thanks for stopping by, dont forget to check out my{" "}
+                    Thanks for stopping by, don't forget to check out my{" "}
                     {
                         <Link
                             to="/projects"

@@ -37,7 +37,9 @@ export default function Home() {
 
                 <div>
                     <HeroH1 background={homeLinkImg}>
-                        Front End <br /> Developer
+                        Front End
+                        <br />
+                        Developer
                     </HeroH1>
                     <HeroBody>
                         Living the dream in beautiful Sydney, Australia.
