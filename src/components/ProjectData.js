@@ -12,6 +12,7 @@ import express from "../assets/icons/express.svg";
 // images
 import ProjectZero from "../assets/project-ga-zero.jpg";
 import ProjectOne from "../assets/project-ga-one.jpg";
+import ProjectTwo from "../assets/project-ga-two.jpg";
 import ProjectThree from "../assets/project-ga-three.jpg";
 
 const projectData = [
@@ -28,6 +29,20 @@ const projectData = [
             { icon: express, alt: "Express JS", className: "express" },
             { icon: react, alt: "React" },
             { icon: node, alt: "Node JS" }
+        ]
+    },
+    {
+        key: "sokvn65df",
+        image: ProjectTwo,
+        title: "JuicyB",
+        copy:
+            "JuicyB is a burger recipe sharing application. This was a group project where I focused mainly on the front end. We used Rails as a RESTful API and React for the front end.",
+        linkToProject: "https://burger-recipe.herokuapp.com/",
+        gitHubLink: "https://github.com/project-two/burgerRecipe",
+        techIcons: [
+            { icon: ruby, alt: "Ruby" },
+            { icon: rubyOnRails, alt: "Ruby On Rails", className: "rails" },
+            { icon: react, alt: "React" }
         ]
     },
     {

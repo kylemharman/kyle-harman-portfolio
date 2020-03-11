@@ -8,26 +8,20 @@ import {
 
 const ProjectCard = props => {
     return (
-        <ProjectCardContainerDiv>
+        <ProjectCardContainerDiv
+            onClick={() => window.open(props.linkToProject, "_blank")}
+        >
             <img src={props.image} alt="project"></img>
             <ProjectCardTitleDiv>
                 <h3>{props.title}</h3>
                 <div>
-                    <a
-                        href={props.linkToProject}
-                        alt="See the project."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fas fa-link fa-lg"></i>
-                    </a>
                     <a
                         href={props.gitHubLink}
                         alt="See projects codebase."
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i className="fas fa-code fa-lg"></i>
+                        <i className="fab fa-github fa-lg"></i>
                     </a>
                 </div>
             </ProjectCardTitleDiv>

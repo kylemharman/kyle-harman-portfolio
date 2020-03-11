@@ -4,11 +4,12 @@ export const ProjectCardContainerDiv = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 25px -10px #ccc;
-    -moz-box-shadow: 4px 4px 25px -10px #ccc;
+    padding: 10px;
+    margin-bottom: 40px;
     box-shadow: 4px 4px 25px -10px #ccc;
     overflow: hidden;
-    transition: 0.5sec ease-in-out;
+    transition: 0.3s ease-out;
+    cursor: pointer;
 
     h3 {
         font-weight: bold;
@@ -16,6 +17,11 @@ export const ProjectCardContainerDiv = styled.div`
 
     img {
         width: 100%;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 20px 20px 20px -10px #ccc;
     }
 `;
 
