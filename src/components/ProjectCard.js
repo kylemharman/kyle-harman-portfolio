@@ -14,15 +14,8 @@ const ProjectCard = props => {
             <img src={props.image} alt="project"></img>
             <ProjectCardTitleDiv>
                 <h3>{props.title}</h3>
-                <div>
-                    <a
-                        href={props.gitHubLink}
-                        alt="See projects codebase."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fab fa-github fa-lg"></i>
-                    </a>
+                <div onClick={() => window.open(props.gitHubLink, "_blank")}>
+                    <i className="fab fa-github fa-lg"></i>
                 </div>
             </ProjectCardTitleDiv>
 
