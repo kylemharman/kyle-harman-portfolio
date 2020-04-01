@@ -65,7 +65,7 @@ export const AboutContainer = styled.div`
             grid-column: 1;
             grid-row: 2;
             padding: 0;
-            margin-bottom: 30px;
+            margin-bottom: 29px;
         }
     }
     .navigationLinks {
